@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="json" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="json" />
+    </root>
+
+<!--    &lt;!&ndash; LOG everything at INFO level &ndash;&gt;-->
+<!--    <root level="info">-->
+<!--        <appender-ref ref="json" />-->
+<!--    </root>-->
+
+<!--    &lt;!&ndash; LOG "ch*" at DEBUG level &ndash;&gt;-->
+<!--    <logger name="ch" level="debug" additivity="false">-->
+<!--        <appender-ref ref="json" />-->
+<!--    </logger>-->
+
+<!--    &lt;!&ndash; LOG "ch*" at DEBUG level &ndash;&gt;-->
+<!--    <logger name="org.springframework.cloud.sleuth" level="debug" additivity="false">-->
+<!--        <appender-ref ref="json" />-->
+<!--    </logger>-->
+
+<!--    <logger name="io.opentelemetry" level="debug" additivity="false">-->
+<!--        <appender-ref ref="json" />-->
+<!--    </logger>-->
+
+</configuration>

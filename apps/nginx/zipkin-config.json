@@ -1,0 +1,5 @@
+{
+  "service_name": "nginx",
+  "collector_host": "zipkinserver.zipkin.svc.cluster.local",
+  "collector_port": 9411
+}

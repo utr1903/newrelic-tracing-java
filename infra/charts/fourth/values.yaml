@@ -1,0 +1,18 @@
+name: fourth
+namespace: fourth
+port: 8080
+
+nginxName: nginx-fourth
+nginxPort: 80
+
+hpa:
+  minReplicas: 1
+  maxReplicas: 2
+
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50
